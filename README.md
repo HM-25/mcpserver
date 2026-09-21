@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/OMNICOM-Digital.png" width="120" alt="Omnicom, s.r.o." />
+  <img src="https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png" width="120" alt="Omnicom, s.r.o." />
 </p>
 
 <h1 align="center">GLPI MCP Server Plugin</h1>
