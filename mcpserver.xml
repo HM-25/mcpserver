@@ -4,7 +4,7 @@
   <name>MCP Server</name>
   <state>stable</state>
   <shortdesc lang="en">Exposes GLPI as an MCP (Model Context Protocol) server: tickets, knowledge base, service catalog, projects, users/groups, and ITIL analytics, handled conversationally by AI assistants such as Claude and Microsoft Copilot.</shortdesc>
-  <logo>https://github.com/OMNICOM-Digital.png</logo>
+  <logo>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png</logo>
   <homepage>https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/</homepage>
   <readme>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/README.md</readme>
   <issues>https://github.com/OMNICOM-Digital/mcpserver/issues</issues>
