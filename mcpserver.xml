@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <id>mcpserver</id>
+  <name>MCP Server</name>
+  <state>stable</state>
+  <shortdesc lang="en">Exposes GLPI as an MCP (Model Context Protocol) server, so AI assistants can work with tickets, the knowledge base, users/groups, and the service catalog.</shortdesc>
+  <logo>https://github.com/OMNICOM-Digital.png</logo>
+  <homepage>https://omnicom.digital</homepage>
+  <readme>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/README.md</readme>
+  <issues>https://github.com/OMNICOM-Digital/mcpserver/issues</issues>
+  <authors>
+    <author>Omnicom, s.r.o.</author>
+  </authors>
+  <langs>
+    <lang name="English" contact="sales@omnicom.sk"/>
+  </langs>
+  <versions>
+    <version>
+      <num>1.2.3</num>
+      <compatibility>
+        <min>11.0.0</min>
+        <max>11.9.99</max>
+      </compatibility>
+      <download_url>https://omnicom.digital/glpi-mcp-server</download_url>
+      <license>GPL v3+</license>
+    </version>
+  </versions>
+  <note>Private plugin - distribution to GLPI Cloud customer instances is arranged directly with Teclib per the private-plugin mechanism. This descriptor is a preview draft; the download_url above is a placeholder pending the protected distribution endpoint.</note>
+</root>
