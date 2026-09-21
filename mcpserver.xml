@@ -25,5 +25,5 @@
       <license>GPL v3+</license>
     </version>
   </versions>
-  <note>On-premise only for now - OAuth login needs a temporary GLPI core patch that can't be applied on Cloud instances (already reported to Teclib). Private plugin - Cloud distribution is arranged directly with Teclib per the private-plugin mechanism once that's fixed upstream. This descriptor is a preview draft; the download_url above is a placeholder pending the protected distribution endpoint. Subscription pricing and support terms: see the homepage.</note>
+  <note>Works for on-premise and GLPI Cloud instances alike. A small, temporary GLPI core OAuth fix is still pending upstream (already reported to Teclib). Private plugin - Cloud distribution is arranged directly with Teclib per the private-plugin mechanism. This descriptor is a preview draft; the download_url above is a placeholder pending the protected distribution endpoint. Subscription pricing and support terms: see the homepage.</note>
 </root>
