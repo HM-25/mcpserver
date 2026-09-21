@@ -1,8 +1,21 @@
-# GLPI MCP Server Plugin
+<p align="center">
+  <img src="https://github.com/OMNICOM-Digital.png" width="120" alt="Omnicom, s.r.o." />
+</p>
+
+<h1 align="center">GLPI MCP Server Plugin</h1>
+
+<p align="center">
+  <a href="https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/"><img src="https://img.shields.io/badge/Get%20it-omnicom.digital-c2304e" alt="Get it at omnicom.digital" /></a>
+  <img src="https://img.shields.io/badge/license-GPLv3-13A688" alt="GPLv3 license" />
+  <img src="https://img.shields.io/badge/GLPI-11.0--11.9-13A688" alt="GLPI 11.0-11.9" />
+  <img src="https://img.shields.io/badge/status-on--premise-lightgrey" alt="On-premise only for now" />
+</p>
 
 A GLPI plugin that exposes GLPI as an [MCP](https://modelcontextprotocol.io) (Model Context Protocol) server, so AI assistants work with tickets, the knowledge base, projects, users, groups, and the service catalog conversationally, instead of manual navigation or one-off custom integrations per client.
 
-Built and maintained by [Omnicom, s.r.o.](https://omnicom.digital), an ITSM/ESM consultancy based in Bratislava, Slovakia. Full product page: [omnicom.digital - GLPI plugins](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/).
+Built and maintained by [Omnicom, s.r.o.](https://omnicom.digital), an ITSM/ESM consultancy based in Bratislava, Slovakia.
+
+**[-> Full product page, pricing, and how to get it](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/)**
 
 ## Features
 
@@ -49,6 +62,8 @@ Source is open (GPL v3.0 - see [LICENSE](LICENSE)). A subscription covers access
 - €400/year (excl. VAT)
 - Optional one-time installation assistance: €100 (excl. VAT)
 - Without a renewed subscription, the last downloaded version keeps working, but there are no further releases or support portal access until renewal
+
+**[Order / subscribe via omnicom.digital ->](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/)**
 
 ## Get in touch
 
