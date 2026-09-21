@@ -8,7 +8,6 @@
   <a href="https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/"><img src="https://img.shields.io/badge/Get%20it-omnicom.digital-c2304e" alt="Get it at omnicom.digital" /></a>
   <img src="https://img.shields.io/badge/license-GPLv3-13A688" alt="GPLv3 license" />
   <img src="https://img.shields.io/badge/GLPI-11.0--11.9-13A688" alt="GLPI 11.0-11.9" />
-  <img src="https://img.shields.io/badge/status-on--premise-lightgrey" alt="On-premise only for now" />
 </p>
 
 A GLPI plugin that exposes GLPI as an [MCP](https://modelcontextprotocol.io) (Model Context Protocol) server, so AI assistants work with tickets, the knowledge base, projects, users, groups, and the service catalog conversationally, instead of manual navigation or one-off custom integrations per client.
@@ -48,7 +47,7 @@ Tool visibility follows GLPI's own profiles:
 ## Compatibility
 
 - GLPI 11.0.0 - 11.9.99 (current production: 11.0.5)
-- Currently on-premise only. OAuth login needs a small, temporary GLPI core patch that can't be applied on Cloud instances; Cloud distribution through the GLPI Marketplace private-plugin mechanism is planned once that's fixed upstream (already reported to Teclib).
+- Works for on-premise and GLPI Cloud instances alike. A small, temporary GLPI core OAuth fix is still pending upstream (already reported to Teclib); a streamlined GLPI Marketplace listing for Cloud installs is in progress.
 - Twig-based front end; no raw SQL; all front/ajax endpoints permission-checked
 
 ## Status
