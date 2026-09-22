@@ -12,7 +12,7 @@
 
 A GLPI plugin that exposes GLPI as an [MCP](https://modelcontextprotocol.io) (Model Context Protocol) server, so AI assistants work with tickets, the knowledge base, projects, users, groups, and the service catalog conversationally, instead of manual navigation or one-off custom integrations per client.
 
-Built and maintained by [Omnicom, s.r.o.](https://omnicom.digital), an ITSM/ESM consultancy based in Bratislava, Slovakia.
+Built and maintained by [Omnicom, s.r.o.](https://omnicom.digital), an ITSM/ESM consultancy.
 
 **[-> Full product page, pricing, and how to get it](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/)**
 
@@ -29,8 +29,8 @@ Built and maintained by [Omnicom, s.r.o.](https://omnicom.digital), an ITSM/ESM 
 
 Tool visibility follows GLPI's own profiles:
 
-- **Standard / Central** — full toolset, including user/group management, ticket updates, assignments, and validations
-- **Self-Service / Helpdesk** — a limited subset: own tickets, FAQ, and permitted forms
+- **Standard / Central**: full toolset, including user/group management, ticket updates, assignments, and validations
+- **Self-Service / Helpdesk**: a limited subset of own tickets, FAQ, and permitted forms
 
 ## Benefits
 
