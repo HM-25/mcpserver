@@ -3,7 +3,7 @@
   <name>MCP Server</name>
   <key>mcpserver</key>
   <state>stable</state>
-  <logo>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png</logo>
+  <logo>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-logo-40.png</logo>
   <description>
     <short>
       <en>Exposes GLPI as an MCP (Model Context Protocol) server so AI assistants like Claude and Microsoft Copilot can work with tickets, the knowledge base, the service catalog, projects, and users/groups conversationally.</en>
