@@ -1,29 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <id>mcpserver</id>
   <name>MCP Server</name>
+  <key>mcpserver</key>
   <state>stable</state>
-  <shortdesc lang="en">Exposes GLPI as an MCP (Model Context Protocol) server: tickets, knowledge base, service catalog, projects, users/groups, and ITIL analytics, handled conversationally by AI assistants such as Claude and Microsoft Copilot.</shortdesc>
   <logo>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png</logo>
+  <description>
+    <short>
+      <en>Exposes GLPI as an MCP (Model Context Protocol) server so AI assistants like Claude and Microsoft Copilot can work with tickets, the knowledge base, the service catalog, projects, and users/groups conversationally.</en>
+    </short>
+    <long>
+      <en>
+**MCP Server** connects GLPI to AI assistants over the Model Context Protocol (MCP), letting tools like Claude and Microsoft Copilot work with GLPI conversationally.
+
+### Capabilities
+- Search, review, and update tickets in plain language — full history, follow-ups, tasks, solutions, and approvals
+- Query the knowledge base and complete service catalog forms in natural language
+- User and group management
+- Project tracking with cost visibility
+
+### Access control
+Tool access follows GLPI's existing profiles: Standard and Central profiles get the full toolset, while Self-Service and Helpdesk profiles are limited to their own tickets and FAQ resources.
+
+### Platform support
+Works on GLPI Cloud and on-premise instances alike (GLPI 11.0.0–11.9.99). Built with Twig templating, avoids direct SQL queries, and every endpoint enforces permission validation.
+
+### Access
+MCP Server is distributed under an annual subscription. Request access and see current pricing at the homepage link above.
+      </en>
+    </long>
+  </description>
   <homepage>https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/</homepage>
-  <readme>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/README.md</readme>
+  <download>https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/</download>
   <issues>https://github.com/OMNICOM-Digital/mcpserver/issues</issues>
+  <readme>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/README.md</readme>
   <authors>
     <author>Omnicom, s.r.o.</author>
   </authors>
-  <langs>
-    <lang name="English" contact="sales@omnicom.sk"/>
-  </langs>
   <versions>
     <version>
       <num>1.2.3</num>
-      <compatibility>
-        <min>11.0.0</min>
-        <max>11.9.99</max>
-      </compatibility>
-      <download_url>https://omnicom.digital/glpi-mcp-server</download_url>
-      <license>GPL v3+</license>
+      <compatibility>~11.0</compatibility>
+      <download_url>https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/</download_url>
     </version>
   </versions>
-  <note>Works for on-premise and GLPI Cloud instances alike. A small, temporary GLPI core OAuth fix is still pending upstream (already reported to Teclib). Private plugin - Cloud distribution is arranged directly with Teclib per the private-plugin mechanism. This descriptor is a preview draft; the download_url above is a placeholder pending the protected distribution endpoint. Subscription pricing and support terms: see the homepage.</note>
+  <langs>
+    <lang>en_GB</lang>
+  </langs>
+  <license><![CDATA[GPL v3+]]></license>
+  <tags>
+    <en>
+      <tag>AI</tag>
+      <tag>Automation</tag>
+      <tag>Integration</tag>
+      <tag>Helpdesk</tag>
+    </en>
+  </tags>
 </root>
