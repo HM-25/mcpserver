@@ -44,6 +44,10 @@ Tool visibility follows GLPI's own profiles:
 - Claude
 - Microsoft Copilot
 
+## Security
+
+Version 1.3.0 remediates every finding from an independent external security review (17 findings total), including a private-followup/task visibility gap and several missing entity and rights checks on write actions. The four write tools with the broadest blast radius — user creation, group creation, group membership, and URL-based document upload — now ship disabled by default; an admin opts each one back in explicitly from Setup > MCP Server.
+
 ## Compatibility
 
 - GLPI 11.0.0 - 11.9.99 (current production: 11.0.5)
@@ -52,7 +56,7 @@ Tool visibility follows GLPI's own profiles:
 
 ## Status
 
-Version 1.2.3, live-verified end-to-end against a demo GLPI instance (Tickets, Knowledge base, Users/groups, Forms, Projects, ITIL analytics).
+Version 1.3.0, live-verified end-to-end against a demo GLPI instance (Tickets, Knowledge base, Users/groups, Forms, Projects, ITIL analytics).
 
 ## Licensing
 
