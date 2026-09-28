@@ -18,12 +18,14 @@ Built and maintained by [Omnicom, s.r.o.](https://omnicom.digital), an ITSM/ESM 
 
 ## Features
 
-- **Tickets** - search, review, and update tickets in plain language, with full history, follow-ups, tasks, solutions, and approvals
+- **Tickets** - search, review, and update tickets in plain language, with full history, follow-ups, tasks, solutions, and approvals; add or remove requesters and observers, and assign tickets to groups by name
 - **Knowledge base** - natural-language queries return relevant articles instead of keyword search
 - **Service catalog** - conversational form completion, validated against GLPI's own configuration
 - **Users and groups** - look up colleagues and manage groups from the chat interface
 - **Projects** - create, update, and assign projects and tasks, with cost tracking
-- **ITIL analytics** (new) - flags data inconsistencies against ITIL best practices, including misclassified ticket types
+- **ITIL analytics** - flags data inconsistencies against ITIL best practices, including misclassified ticket types
+- **ITIL categories** (new) - search the category tree and validate that a ticket's type and category are consistent
+- **Administration** (new) - list and inspect entities, and read the current session context
 
 ## Permission tiers
 
@@ -46,17 +48,19 @@ Tool visibility follows GLPI's own profiles:
 
 ## Security
 
-Version 1.3.0 remediates every finding from an independent external security review (17 findings total), including a private-followup/task visibility gap and several missing entity and rights checks on write actions. The four write tools with the broadest blast radius — user creation, group creation, group membership, and URL-based document upload — now ship disabled by default; an admin opts each one back in explicitly from Setup > MCP Server.
+Version 1.3.0 remediates every finding from an independent external security review (17 findings total), including a private-followup/task visibility gap and several missing entity and rights checks on write actions. The four write tools with the broadest blast radius (user creation, group creation, group membership, and URL-based document upload) now ship disabled by default; an admin opts each one back in explicitly from Setup > MCP Server.
+
+Later releases continued the hardening: since 1.6.0, ticket assignment checks that the caller has READ access to the ticket's entity, and assignees are validated the same way the GLPI UI validates them.
 
 ## Compatibility
 
-- GLPI 11.0.0 - 11.9.99 (current production: 11.0.5)
+- GLPI 11.0.0 - 11.9.99 (latest GLPI release: 11.0.8)
 - Works for on-premise and GLPI Cloud instances alike. A small, temporary GLPI core OAuth fix is still pending upstream (already reported to Teclib); a streamlined GLPI Marketplace listing for Cloud installs is in progress.
 - Twig-based front end; no raw SQL; all front/ajax endpoints permission-checked
 
 ## Status
 
-Version 1.3.0, live-verified end-to-end against a demo GLPI instance (Tickets, Knowledge base, Users/groups, Forms, Projects, ITIL analytics).
+Version 1.7.0 (60 tools: 33 read, 27 write), live-verified end-to-end against a demo GLPI instance (Tickets, Knowledge base, Users/groups, Forms, Projects, ITIL analytics, Administration). See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 ## Licensing
 
