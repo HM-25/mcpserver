@@ -6,11 +6,11 @@
   <logo>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-logo-40.png</logo>
   <description>
     <short>
-      <en>Exposes GLPI as an MCP (Model Context Protocol) server so AI assistants like Claude and Microsoft Copilot can work with tickets, the knowledge base, the service catalog, projects, and users/groups conversationally.</en>
+      <en>The first official MCP Server plugin for GLPI. Exposes GLPI as an MCP (Model Context Protocol) server so AI assistants like Claude and Microsoft Copilot can work with tickets, the knowledge base, the service catalog, projects, and users/groups conversationally.</en>
     </short>
     <long>
       <en>
-**MCP Server** connects GLPI to AI assistants over the Model Context Protocol (MCP), letting tools like Claude and Microsoft Copilot work with GLPI conversationally.
+**MCP Server** is the first official MCP Server plugin for GLPI, connecting GLPI to AI assistants over the Model Context Protocol (MCP), letting tools like Claude and Microsoft Copilot work with GLPI conversationally.
 
 ### Capabilities
 - Search, review, and update tickets in plain language, with full history, follow-ups, tasks, solutions, and approvals
