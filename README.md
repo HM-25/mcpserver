@@ -10,6 +10,8 @@
   <img src="https://img.shields.io/badge/GLPI-11.0--11.9-13A688" alt="GLPI 11.0-11.9" />
 </p>
 
+**The first official MCP Server plugin for GLPI.**
+
 A GLPI plugin that exposes GLPI as an [MCP](https://modelcontextprotocol.io) (Model Context Protocol) server, so AI assistants work with tickets, the knowledge base, projects, users, groups, and the service catalog conversationally, instead of manual navigation or one-off custom integrations per client.
 
 Built and maintained by [Omnicom, s.r.o.](https://omnicom.digital), an ITSM/ESM consultancy.
