@@ -21,6 +21,11 @@
 - Administration: entity listing and details, plus session context
 - Project tracking with cost visibility
 
+### Human in the loop
+- Write confirmation: every change the AI makes is previewed first and only written after the user approves it
+- Language check: public followups and solutions are checked against the requester's GLPI language before they are posted
+- Both behaviors are on by default and can be switched off by an admin, for example for unattended agents
+
 ### Access control
 Tool access follows GLPI's existing profiles: Standard and Central profiles get the full toolset, while Self-Service and Helpdesk profiles are limited to their own tickets and FAQ resources.
 
@@ -40,6 +45,11 @@ MCP Server is distributed under an annual subscription. Request access and see c
     <author>Omnicom, s.r.o.</author>
   </authors>
   <versions>
+    <version>
+      <num>1.8.0</num>
+      <compatibility>~11.0</compatibility>
+      <download_url>https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/</download_url>
+    </version>
     <version>
       <num>1.7.0</num>
       <compatibility>~11.0</compatibility>
