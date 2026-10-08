@@ -26,8 +26,10 @@ Built and maintained by [Omnicom, s.r.o.](https://omnicom.digital), an ITSM/ESM 
 - **Users and groups** - look up colleagues and manage groups from the chat interface
 - **Projects** - create, update, and assign projects and tasks, with cost tracking
 - **ITIL analytics** - flags data inconsistencies against ITIL best practices, including misclassified ticket types
-- **ITIL categories** (new) - search the category tree and validate that a ticket's type and category are consistent
-- **Administration** (new) - list and inspect entities, and read the current session context
+- **ITIL categories** - search the category tree and validate that a ticket's type and category are consistent
+- **Administration** - list and inspect entities, and read the current session context
+- **Write confirmation** (new) - every change the AI makes is previewed first, with targets shown by name and before and after values, and is only written after you approve it
+- **Language check** (new) - public followups and solutions are checked against the requester's GLPI language, and you choose whether to keep the original language or reply in theirs
 
 ## Permission tiers
 
@@ -39,6 +41,7 @@ Tool visibility follows GLPI's own profiles:
 ## Benefits
 
 - Cuts the navigation burden for occasional GLPI users
+- Keeps a person in the loop: nothing is written to GLPI without an explicit approval
 - Surfaces GLPI's own rule errors transparently instead of failing silently
 - Respects existing user permissions - no new access model required
 - Runs natively inside GLPI, no external proxy
@@ -54,6 +57,8 @@ Version 1.3.0 remediates every finding from an independent external security rev
 
 Later releases continued the hardening: since 1.6.0, ticket assignment checks that the caller has READ access to the ticket's entity, and assignees are validated the same way the GLPI UI validates them.
 
+Since 1.8.0, every write is two-step. The first call only returns a preview; the write happens on a second call carrying a signed confirmation token that is valid for 10 minutes, for one user, one tool, and exactly the previewed data. Any change to the data invalidates the token. Admins can switch this off under Setup > MCP Server > Behavior for unattended agents that have nobody to ask.
+
 ## Compatibility
 
 - GLPI 11.0.0 - 11.9.99 (latest GLPI release: 11.0.8)
@@ -62,7 +67,9 @@ Later releases continued the hardening: since 1.6.0, ticket assignment checks th
 
 ## Status
 
-Version 1.7.0 (60 tools: 33 read, 27 write), live-verified end-to-end against a demo GLPI instance (Tickets, Knowledge base, Users/groups, Forms, Projects, ITIL analytics, Administration). See [CHANGELOG.md](CHANGELOG.md) for release history.
+Version 1.8.0 (60 tools: 33 read, 27 write), live-verified end-to-end against a demo GLPI instance (Tickets, Knowledge base, Users/groups, Forms, Projects, ITIL analytics, Administration). See [CHANGELOG.md](CHANGELOG.md) for release history.
+
+Upgrading from an earlier version: run the plugin update in Setup > Plugins, clear the GLPI cache, and reconnect your AI clients.
 
 ## Licensing
 
