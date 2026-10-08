@@ -2,6 +2,18 @@
 
 Public summary of MCP Server releases. Full release packages are available to subscribers via [omnicom.digital](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/).
 
+## 1.8.0
+- Write confirmation: every write tool now first returns a preview of exactly what it will write (targets resolved to names, before and after values for updates, a warning for destructive actions) and only writes after the person approves. On by default; admins can switch it off under Setup > MCP Server > Behavior for unattended agents
+- Language check for public followups and solutions: if the text is not in the ticket requester's GLPI language, nothing is written and the person chooses whether to keep the original language or write in the requester's. On by default, switchable under Setup > MCP Server > Behavior
+- Changes to both switches are recorded in the History tab
+- Includes all 1.7.1 fixes
+- Upgrade: run the plugin update in Setup > Plugins, clear the GLPI cache, and reconnect your AI clients
+
+## 1.7.1
+- Fix: `glpi_submit_form` no longer fails with a server error when an Item question gets an empty answer
+- Unexpected errors in any tool now return a clean tool error instead of an HTTP 500
+- Answers to Item questions are validated (format and item type) before the form is submitted
+
 ## 1.7.0
 - New write tool `glpi_add_ticket_actor`: add a requester or observer to a ticket
 
