@@ -30,7 +30,7 @@
 Tool access follows GLPI's existing profiles: Standard and Central profiles get the full toolset, while Self-Service and Helpdesk profiles are limited to their own tickets and FAQ resources.
 
 ### Platform support
-Works on GLPI Cloud and on-premise instances alike (GLPI 11.0.0–11.9.99). Built with Twig templating, avoids direct SQL queries, and every endpoint enforces permission validation.
+Supports on-premise GLPI 11.0.0–11.9.99, with 11.0.11 or later recommended: from 11.0.11 the OAuth fix the plugin relies on is part of GLPI core, so no core patch is needed. Installation on GLPI Cloud instances is in progress. Built with Twig templating, avoids direct SQL queries, and every endpoint enforces permission validation.
 
 ### Access
 MCP Server is distributed under an annual subscription. Request access and see current pricing at the homepage link above.
