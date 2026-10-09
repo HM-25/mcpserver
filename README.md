@@ -61,8 +61,8 @@ Since 1.8.0, every write is two-step. The first call only returns a preview; the
 
 ## Compatibility
 
-- GLPI 11.0.0 - 11.9.99 (latest GLPI release: 11.0.8)
-- Works for on-premise and GLPI Cloud instances alike. A small, temporary GLPI core OAuth fix is still pending upstream (already reported to Teclib); a streamlined GLPI Marketplace listing for Cloud installs is in progress.
+- GLPI 11.0.0 - 11.9.99 (recommended: 11.0.11 or later)
+- Works for on-premise and GLPI Cloud instances alike. Since GLPI 11.0.11 the OAuth fix the plugin relies on is part of GLPI core, so no core patch is needed before installing. On GLPI 11.0.0 - 11.0.10 the patch still has to be applied first. A streamlined GLPI Marketplace listing for Cloud installs is in progress.
 - Twig-based front end; no raw SQL; all front/ajax endpoints permission-checked
 
 ## Status
