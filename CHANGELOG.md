@@ -38,4 +38,4 @@ Public summary of MCP Server releases. Full release packages are available to su
 
 ## 1.3.0
 - Remediates all 17 findings from an independent external security review, including a private followup/task visibility gap and missing entity and rights checks on write actions
-- User creation, group creation, group membership, and URL-based document upload ship disabled by default; admins enable each one explicitly from Setup > MCP Server
+- User creation, group creation, group membership, and URL-based document upload ship disabled by default; admins enable each one explicitly from Setup > MCP Server.
