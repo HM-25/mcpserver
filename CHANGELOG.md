@@ -1,13 +1,13 @@
 # Changelog
 
-Public summary of MCP Server releases. Full release packages are available to subscribers via [omnicom.digital](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/). Security releases are free of charge to every customer who has received an affected version, including customers whose subscription has ended; their advisories are public in [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories).
+Public summary of MCP Server releases. Full release packages are available to subscribers via [omnicom.digital](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/). Security fixes are published as free patches for everyone in [mcpserver-security](https://github.com/OMNICOM-Digital/mcpserver-security); their advisories are public in [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories).
 
 ## Support line and release convention
 
-- **Support line:** 1.x, security support until **10/2031**. The date is extended with every new release so that each release is supported for at least five years from its own release date. See [SECURITY.md](SECURITY.md).
-- **Feature releases** (`1.x.0`, roughly monthly): new tools and features that fit the existing permission and write-confirmation model. They stay in the 1.x line, do not start a new support period, and are delivered to subscribers.
+- **Support period:** every release is supported for five years from its own release date; the 1.x line runs until **2031-10-07** and moves with every release. Dates per release: [supported versions](https://github.com/OMNICOM-Digital/mcpserver-security#supported-versions).
+- **Feature releases** (`1.x.0`, roughly monthly): new tools and features that fit the existing permission and write-confirmation model. They stay in the 1.x line (each with its own five years of support) and are delivered to subscribers.
 - **Patch releases** (`1.x.y`): fixes only, no new features.
-- **Security releases:** a patch release that fixes a vulnerability. The advisory is published here in Security Advisories; the package is delivered through the Support Portal or a registered download link, free of charge and not conditional on an active subscription.
+- **Security releases:** a patch release that fixes a vulnerability. The fix is published as a free patch for every affected release in [mcpserver-security](https://github.com/OMNICOM-Digital/mcpserver-security), with an advisory here in Security Advisories; subscribers also get the full release through the Support Portal.
 - **Tags** are the plain version number without a prefix (for example `1.8.1`), matching the version in `setup.php` and `mcpserver.xml`.
 - Entries prefixed **Security:** fix a vulnerability or close a security gap.
 - A new line (2.0) is opened only if the security model, authentication or intended use changes substantially; it gets its own support period, announced in advance.

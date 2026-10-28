@@ -2,19 +2,19 @@
 
 This policy covers **MCP Server for GLPI** (`mcpserver`), developed and maintained by Omnicom, s.r.o. ("Omnicom") and licensed under GPL-3.0-or-later.
 
-Full releases are distributed to subscribers via the Omnicom GLPI Support Portal. The public product repository, https://github.com/OMNICOM-Digital/mcpserver, publishes the public changelog and the security advisories.
+Full releases are distributed to subscribers via the Omnicom GLPI Support Portal. The public product repository, https://github.com/OMNICOM-Digital/mcpserver, publishes the public changelog and the security advisories. Security patches are published for everyone in https://github.com/OMNICOM-Digital/mcpserver-security.
 
 ## Supported versions
 
-Security support is defined per **release line**, not per individual release. All releases within a supported line receive security fixes.
+**Every release is supported for five years from its own release date.** A release published today is supported until the same day five years from now. The release line as a whole is supported until five years after its latest release, so the line's end date moves with every new release.
 
 | Line | GLPI | First published | Security support until |
 |---|---|---|---|
-| 1.x | 11.x | 09/2026 | **10/2031**\* |
+| 1.x | 11.x | 09/2026 | **2031-10-07**\* |
 
-\* The support end date is extended whenever a new release is published in the line, so that every release in the line is supported for at least five years from its own release date.
+\* Five years from the latest release (1.8.0, 2026-10-07). The release-by-release dates are in the [supported versions table](https://github.com/OMNICOM-Digital/mcpserver-security#supported-versions), which is updated with every release.
 
-Monthly feature releases within a line (for example, new MCP tools that fit the existing permission and write-confirmation model) do not start a new support period. A new line (for example 2.0) is created only when the security model, authentication or intended use changes substantially, and it receives its own support period announced in advance.
+Monthly feature releases within a line (for example, new MCP tools that fit the existing permission and write-confirmation model) stay in the same line; like every release, each one is supported for five years from its own release date. A new line (for example 2.0) is created only when the security model, authentication or intended use changes substantially, and it receives its own support period announced in advance.
 
 The support end date is stated here and on the product page at the time of purchase or download.
 
@@ -55,14 +55,15 @@ We ask for **90** days from your report to prepare and release a fix before publ
 
 - Security fixes are issued as **separate security releases** (patch releases such as `1.x.y`), distinguishable from feature updates in the changelog (entries marked `Security:`).
 - Security fixes apply to **every release in the supported line**, not only the latest one.
-- **Security fixes are free of charge and are not conditional on an active subscription.** They are provided to every customer who has received an affected version, including customers whose subscription has ended. A subscription covers new feature releases, support, SLA and related services; it is not required to receive a security fix for a version you already have.
+- **Security fixes are free of charge for everyone and are not conditional on an active subscription.** A subscription covers new feature releases, support, SLA and the Support Portal; it is not required to receive a security fix for a version you already have.
 - Each fix is accompanied by an advisory describing the issue, affected versions, severity, and the action users should take.
 
 ### Where to get security releases
 
+- **Security patches** are published for everyone in [OMNICOM-Digital/mcpserver-security](https://github.com/OMNICOM-Digital/mcpserver-security): one patch file per affected release, with checksums and instructions. They contain only the security fix, not the plugin.
 - **Advisories** are published for everyone in the [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories) of the product repository: what is affected, severity, and the action to take. They are also sent to the contact addresses of registered customers.
-- **Security release packages** are delivered through the Omnicom GLPI Support Portal, or as a download link sent to the customer's registered contact, free of charge to every customer who has received an affected version, including customers whose subscription has ended. The plugin package itself is not published on GitHub.
-- If you are a customer without current Support Portal access, e-mail security@omnicom.digital with your organisation name and plugin version to receive the security release.
+- **Subscribers** also receive the full security release (for example `1.8.1`) through the Omnicom GLPI Support Portal.
+- If a patch does not apply to your installation, e-mail security@omnicom.digital with your plugin version.
 
 ## Scope
 
