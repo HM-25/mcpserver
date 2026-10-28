@@ -36,7 +36,7 @@ Supports on-premise GLPI 11.0.0–11.9.99, with 11.0.11 or later recommended: fr
 MCP Server is distributed under an annual subscription covering new releases, support and the Support Portal. Request access and see current pricing at the homepage link above.
 
 ### Security updates
-Security fixes are published as separate security releases, free of charge for everyone and not conditional on an active subscription: [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases). Security support for the 1.x line runs until 10/2031 and is extended with every new release. Security policy and how to report a vulnerability: [SECURITY.md](https://github.com/OMNICOM-Digital/mcpserver/blob/main/SECURITY.md).
+Security fixes are issued as separate security releases, free of charge to every customer who has received an affected version, including customers whose subscription has ended, delivered through the Support Portal or a registered download link. Advisories are public: [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). Security support for the 1.x line runs until 10/2031 and is extended with every new release. Security policy and how to report a vulnerability: [SECURITY.md](https://github.com/OMNICOM-Digital/mcpserver/blob/main/SECURITY.md).
       </en>
     </long>
   </description>
