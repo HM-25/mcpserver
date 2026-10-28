@@ -33,7 +33,10 @@ Tool access follows GLPI's existing profiles: Standard and Central profiles get 
 Supports on-premise GLPI 11.0.0–11.9.99, with 11.0.11 or later recommended: from 11.0.11 the OAuth fix the plugin relies on is part of GLPI core, so no core patch is needed. Installation on GLPI Cloud instances is in progress. Built with Twig templating, avoids direct SQL queries, and every endpoint enforces permission validation.
 
 ### Access
-MCP Server is distributed under an annual subscription. Request access and see current pricing at the homepage link above.
+MCP Server is distributed under an annual subscription covering new releases, support and the Support Portal. Request access and see current pricing at the homepage link above.
+
+### Security updates
+Security fixes are published as separate security releases, free of charge for everyone and not conditional on an active subscription: [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases). Security support for the 1.x line runs until 10/2031 and is extended with every new release. Security policy and how to report a vulnerability: [SECURITY.md](https://github.com/OMNICOM-Digital/mcpserver/blob/main/SECURITY.md).
       </en>
     </long>
   </description>
