@@ -2,7 +2,7 @@
 
 This policy covers **MCP Server for GLPI** (`mcpserver`), developed and maintained by Omnicom, s.r.o. ("Omnicom") and licensed under GPL-3.0-or-later.
 
-Full releases are distributed to subscribers via the Omnicom GLPI Support Portal. This repository (https://github.com/OMNICOM-Digital/mcpserver) publishes the public changelog, security advisories and security releases.
+Full releases are distributed to subscribers via the Omnicom GLPI Support Portal. The public product repository, https://github.com/OMNICOM-Digital/mcpserver, publishes the public changelog, security advisories and security releases.
 
 ## Supported versions
 
@@ -25,7 +25,7 @@ The support end date is stated here and on the product page at the time of purch
 Report privately by either of these channels:
 
 - E-mail: **security@omnicom.digital**
-- GitHub private vulnerability reporting on this repository: Security > [Report a vulnerability](https://github.com/OMNICOM-Digital/mcpserver/security/advisories/new)
+- GitHub private vulnerability reporting on the product repository: [Report a vulnerability](https://github.com/OMNICOM-Digital/mcpserver/security/advisories/new)
 
 Please include:
 
@@ -60,7 +60,7 @@ We ask for **90** days from your report to prepare and release a fix before publ
 
 ### Where to get security releases
 
-Security releases are published as [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases) of this repository, together with a [Security Advisory](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). They are available to everyone, regardless of subscription status. Advisories are also sent to the contact addresses of registered users.
+Security releases are published as [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases) of the product repository, together with a [Security Advisory](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). They are available to everyone, regardless of subscription status. Advisories are also sent to the contact addresses of registered users.
 
 ## Scope
 
