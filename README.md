@@ -59,7 +59,7 @@ Later releases continued the hardening: since 1.6.0, ticket assignment checks th
 
 Since 1.8.0, every write is two-step. The first call only returns a preview; the write happens on a second call carrying a signed confirmation token that is valid for 10 minutes, for one user, one tool, and exactly the previewed data. Any change to the data invalidates the token. Admins can switch this off under Setup > MCP Server > Behavior for unattended agents that have nobody to ask.
 
-Security support for the 1.x line runs until **10/2031**. Security fixes are published as separate security releases on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases), free of charge for everyone and regardless of subscription status. To report a vulnerability, see [SECURITY.md](SECURITY.md); please do not open public issues for security problems.
+Security support for the 1.x line runs until **10/2031**. Security fixes are issued as separate security releases, free of charge to every customer who has received an affected version, including customers whose subscription has ended. Advisories are published in this repository's [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). To report a vulnerability, see [SECURITY.md](SECURITY.md); please do not open public issues for security problems.
 
 ## Compatibility
 
@@ -80,9 +80,9 @@ Source is open (GPL v3.0 - see [LICENSE](LICENSE)). A subscription covers new re
 
 - €400/year (excl. VAT)
 - Optional one-time installation assistance: €100 (excl. VAT)
-- Without a renewed subscription, the last downloaded version keeps working, but new feature releases and Support Portal access pause until renewal
+- Without a renewed subscription, the last downloaded version keeps working; new feature releases and support pause until renewal, but security releases stay available
 
-Security fixes are not part of the subscription. Security releases are published on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases) and are available to everyone, free of charge, regardless of subscription status. Security support for the 1.x line runs until 10/2031; see [SECURITY.md](SECURITY.md) for the support period and how to report a vulnerability.
+Security fixes are not part of the subscription. Security releases are free of charge to every customer who has received an affected version, including customers whose subscription has ended, and are delivered through the Support Portal or a registered download link. Advisories are public in this repository's [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). Security support for the 1.x line runs until 10/2031; see [SECURITY.md](SECURITY.md) for the support period and how to report a vulnerability.
 
 **[Order / subscribe via omnicom.digital ->](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/)**
 

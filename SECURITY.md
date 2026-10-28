@@ -2,7 +2,7 @@
 
 This policy covers **MCP Server for GLPI** (`mcpserver`), developed and maintained by Omnicom, s.r.o. ("Omnicom") and licensed under GPL-3.0-or-later.
 
-Full releases are distributed to subscribers via the Omnicom GLPI Support Portal. The public product repository, https://github.com/OMNICOM-Digital/mcpserver, publishes the public changelog, security advisories and security releases.
+Full releases are distributed to subscribers via the Omnicom GLPI Support Portal. The public product repository, https://github.com/OMNICOM-Digital/mcpserver, publishes the public changelog and the security advisories.
 
 ## Supported versions
 
@@ -55,12 +55,14 @@ We ask for **90** days from your report to prepare and release a fix before publ
 
 - Security fixes are issued as **separate security releases** (patch releases such as `1.x.y`), distinguishable from feature updates in the changelog (entries marked `Security:`).
 - Security fixes apply to **every release in the supported line**, not only the latest one.
-- **Security fixes are free of charge and are not conditional on an active subscription.** A subscription covers new releases, support, SLA and related services; it is not required to receive a security fix for a version you already have.
+- **Security fixes are free of charge and are not conditional on an active subscription.** They are provided to every customer who has received an affected version, including customers whose subscription has ended. A subscription covers new feature releases, support, SLA and related services; it is not required to receive a security fix for a version you already have.
 - Each fix is accompanied by an advisory describing the issue, affected versions, severity, and the action users should take.
 
 ### Where to get security releases
 
-Security releases are published as [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases) of the product repository, together with a [Security Advisory](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). They are available to everyone, regardless of subscription status. Advisories are also sent to the contact addresses of registered users.
+- **Advisories** are published for everyone in the [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories) of the product repository: what is affected, severity, and the action to take. They are also sent to the contact addresses of registered customers.
+- **Security release packages** are delivered through the Omnicom GLPI Support Portal, or as a download link sent to the customer's registered contact, free of charge to every customer who has received an affected version, including customers whose subscription has ended. The plugin package itself is not published on GitHub.
+- If you are a customer without current Support Portal access, e-mail security@omnicom.digital with your organisation name and plugin version to receive the security release.
 
 ## Scope
 
