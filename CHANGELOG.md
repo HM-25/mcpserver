@@ -1,6 +1,16 @@
 # Changelog
 
-Public summary of MCP Server releases. Full release packages are available to subscribers via [omnicom.digital](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/).
+Public summary of MCP Server releases. Full release packages are available to subscribers via [omnicom.digital](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/). Security releases are published on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases) for everyone, free of charge.
+
+## Support line and release convention
+
+- **Support line:** 1.x, security support until **10/2031**. The date is extended with every new release so that each release is supported for at least five years from its own release date. See [SECURITY.md](SECURITY.md).
+- **Feature releases** (`1.x.0`, roughly monthly): new tools and features that fit the existing permission and write-confirmation model. They stay in the 1.x line, do not start a new support period, and are delivered to subscribers.
+- **Patch releases** (`1.x.y`): fixes only, no new features.
+- **Security releases:** a patch release that fixes a vulnerability. Published here as a GitHub Release with a Security Advisory, free of charge and not conditional on an active subscription.
+- **Tags** are the plain version number without a prefix (for example `1.8.1`), matching the version in `setup.php` and `mcpserver.xml`.
+- Entries prefixed **Security:** fix a vulnerability or close a security gap.
+- A new line (2.0) is opened only if the security model, authentication or intended use changes substantially; it gets its own support period, announced in advance.
 
 ## 1.8.0
 - Write confirmation: every write tool now first returns a preview of exactly what it will write (targets resolved to names, before and after values for updates, a warning for destructive actions) and only writes after the person approves. On by default; admins can switch it off under Setup > MCP Server > Behavior for unattended agents
@@ -19,7 +29,8 @@ Public summary of MCP Server releases. Full release packages are available to su
 
 ## 1.6.0
 - New write tool `glpi_remove_ticket_actor`
-- `glpi_assign_ticket` now checks READ access to the ticket's entity and validates assignees the same way the GLPI UI does
+- Security: `glpi_assign_ticket` now checks that the caller has READ access to the ticket's entity before assigning
+- `glpi_assign_ticket` validates assignees the same way the GLPI UI does
 
 ## 1.5.0
 - New read tool `glpi_search_groups`
@@ -37,5 +48,5 @@ Public summary of MCP Server releases. Full release packages are available to su
 - Six new read tools for administration and ITIL categories: `glpi_list_entities`, `glpi_get_entity`, `glpi_get_session_context`, `glpi_search_itil_categories`, `glpi_get_itil_category`, `glpi_analyze_itil_ticket_category`
 
 ## 1.3.0
-- Remediates all 17 findings from an independent external security review, including a private followup/task visibility gap and missing entity and rights checks on write actions
-- User creation, group creation, group membership, and URL-based document upload ship disabled by default; admins enable each one explicitly from Setup > MCP Server
+- Security: remediates all 17 findings from an independent external security review, including a private followup/task visibility gap and missing entity and rights checks on write actions
+- Security: user creation, group creation, group membership, and URL-based document upload ship disabled by default; admins enable each one explicitly from Setup > MCP Server
