@@ -8,7 +8,9 @@ MCP Server Lite (`mcpserverlite`) has its own repository and its own security an
 
 ## Supported versions
 
-Every release of MCP Server for GLPI (GLPI 11.x) is supported with security fixes for **five years from its release date**. The release date of each version is published on the GitHub Releases page: https://github.com/OMNICOM-Digital/mcpserver/releases
+Every release of MCP Server for GLPI (GLPI 11.x) is supported with security fixes for **five years from the date it is published on GitHub Releases**: https://github.com/OMNICOM-Digital/mcpserver/releases
+
+The publication date of a release on GitHub Releases is the start of its support period. It is never changed after publication. No common end date is published for the 1.x line; the end of support of a release is five years after its own publication date.
 
 A security patch release (`1.x.y`) does not restart the support period of the release it fixes.
 
@@ -60,7 +62,9 @@ We ask for **90** days from your report to prepare and release a fix before publ
 
 ### Where to get security releases
 
-GitHub Releases and Security Advisories of https://github.com/OMNICOM-Digital/mcpserver. Security releases are published there for everyone, regardless of subscription status. A security release on GitHub contains the fix as a patch file and in its release notes, not the full plugin; subscribers also receive the full release through the OMNICOM Support Portal. Advisories are also sent to the contact addresses of registered users.
+GitHub Releases and Security Advisories of https://github.com/OMNICOM-Digital/mcpserver. Security releases are published there for everyone, regardless of subscription status.
+
+A security release on GitHub contains the fix as a patch file, with SHA-256 checksums and release notes that state which installed version it applies to and how to apply it. It does not contain the full plugin. Subscribers also receive the full security release through the OMNICOM Support Portal. Advisories are also sent to the contact addresses of registered users.
 
 ## Scope
 
@@ -86,4 +90,4 @@ We will not pursue legal action against researchers who act in good faith, avoid
 
 ---
 
-*Last updated: **28 October 2026**. Contact: **security@omnicom.digital***
+*Last updated: **29 October 2026**. Contact: **security@omnicom.digital***
