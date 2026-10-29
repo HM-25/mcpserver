@@ -4,7 +4,7 @@ Public summary of MCP Server releases. Full release packages are available to su
 
 ## Support line and release convention
 
-- **Support period:** every release is supported for five years from its own release date; the 1.x line runs until **2031-10-07** and moves with every release. Dates per release: [supported versions](https://github.com/OMNICOM-Digital/mcpserver-security#supported-versions).
+- **Support period:** every release is supported for five years from its own release date; the 1.x line runs until **2031-10-29** and moves with every release. Release dates are those on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases); support end per release: [supported versions](https://github.com/OMNICOM-Digital/mcpserver-security#supported-versions).
 - **Feature releases** (`1.x.0`, roughly monthly): new tools and features that fit the existing permission and write-confirmation model. They stay in the 1.x line (each with its own five years of support) and are delivered to subscribers.
 - **Patch releases** (`1.x.y`): fixes only, no new features.
 - **Security releases:** a patch release that fixes a vulnerability. The fix is published as a free patch for every affected release in [mcpserver-security](https://github.com/OMNICOM-Digital/mcpserver-security), with an advisory here in Security Advisories; subscribers also get the full release through the Support Portal.
