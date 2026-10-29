@@ -10,7 +10,7 @@ Full releases are distributed to subscribers via the Omnicom GLPI Support Portal
 
 | Line | GLPI | First published | Security support until |
 |---|---|---|---|
-| 1.x | 11.x | 09/2026 | **2031-10-07**\* |
+| 1.x | 11.x | 2026-10-07 (1.8.0) | **2031-10-07**\* |
 
 \* Five years from the latest release (1.8.0, 2026-10-07). The release-by-release dates are in the [supported versions table](https://github.com/OMNICOM-Digital/mcpserver-security#supported-versions), which is updated with every release.
 
