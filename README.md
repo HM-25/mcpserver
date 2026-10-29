@@ -1,14 +1,12 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png" width="120" alt="OMNICOM s.r.o." />
+  <img src="https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png" alt="OMNICOM s.r.o." width="120">
 </p>
 
-<h1 align="center">GLPI MCP Server Plugin</h1>
+# GLPI MCP Server Plugin
 
-<p align="center">
-  <a href="https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/"><img src="https://img.shields.io/badge/Get%20it-omnicom.digital-c2304e" alt="Get it at omnicom.digital" /></a>
-  <img src="https://img.shields.io/badge/license-GPLv3-13A688" alt="GPLv3 license" />
-  <img src="https://img.shields.io/badge/GLPI-11.0--11.9-13A688" alt="GLPI 11.0-11.9" />
-</p>
+[![Get it at omnicom.digital](https://img.shields.io/badge/Get%20it-omnicom.digital-c2304e)](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/)
+[![GPLv3 license](https://img.shields.io/badge/license-GPLv3-13A688)](LICENSE)
+[![GLPI 11.0-11.9](https://img.shields.io/badge/GLPI-11.0--11.9-13A688)](https://plugins.glpi-project.org/#/plugin/mcpserver)
 
 **The first official MCP Server plugin for GLPI.**
 
@@ -53,13 +51,19 @@ Tool visibility follows GLPI's own profiles:
 
 ## Security
 
-Version 1.3.0 remediates every finding from an independent external security review (17 findings total), including a private-followup/task visibility gap and several missing entity and rights checks on write actions. The four write tools with the broadest blast radius (user creation, group creation, group membership, and URL-based document upload) now ship disabled by default; an admin opts each one back in explicitly from Setup > MCP Server.
+Version 1.3.0 remediates every finding from an independent external security review (17 findings total), including a private-followup/task visibility gap and several missing entity and rights checks on write actions. The four write tools with the broadest blast radius (user creation, group creation, group membership, and URL-based document upload) ship disabled by default; an admin opts each one back in explicitly from Setup > MCP Server.
 
 Later releases continued the hardening: since 1.6.0, ticket assignment checks that the caller has READ access to the ticket's entity, and assignees are validated the same way the GLPI UI validates them.
 
 Since 1.8.0, every write is two-step. The first call only returns a preview; the write happens on a second call carrying a signed confirmation token that is valid for 10 minutes, for one user, one tool, and exactly the previewed data. Any change to the data invalidates the token. Admins can switch this off under Setup > MCP Server > Behavior for unattended agents that have nobody to ask.
 
-Every release is supported for five years from its own release date, as shown on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases); the 1.x line currently runs until **2031-10-29**. Security fixes are published as free security releases on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases) for everyone, with an advisory in this repository's [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). To report a vulnerability, see [SECURITY.md](SECURITY.md); please do not open public issues for security problems.
+### Security support
+
+Every release is supported with security fixes for **five years from the date it is published on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases)**. That publication date is the start of the support period and is never changed afterwards. See [SECURITY.md](SECURITY.md) for which releases receive a patch.
+
+Security fixes are **free of charge for everyone** and do not depend on an active subscription. They are published as security releases on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases), with an advisory in this repository's [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories).
+
+To report a vulnerability, follow [SECURITY.md](SECURITY.md) or write to security@omnicom.digital. Please do not open public issues for security problems.
 
 ### Applying a security patch
 
@@ -87,18 +91,20 @@ Upgrading from an earlier version: run the plugin update in Setup > Plugins, cle
 
 ## Licensing
 
-Source is open (GPL v3.0 - see [LICENSE](LICENSE)). A subscription covers new releases, support with SLA, and access to the OMNICOM Support Portal:
+The plugin is licensed under GPL v3.0 (see [LICENSE](LICENSE)). The plugin package, including its source, is delivered to subscribers through the OMNICOM Support Portal; this repository holds the public documentation, changelog, security policy, advisories, and security releases.
+
+A subscription covers new releases, support with SLA, and access to the OMNICOM Support Portal:
 
 - €400/year (excl. VAT)
 - Optional one-time installation assistance: €100 (excl. VAT)
-- Without a renewed subscription, the last downloaded version keeps working; new feature releases, support and Support Portal access pause until renewal, but security patches stay free on GitHub
+- Without a renewed subscription, the last downloaded version keeps working; new feature releases, support and Support Portal access pause until renewal, but security fixes stay free on GitHub
 
-Security fixes are not part of the subscription. They are published as free security releases for everyone on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases). Each release is supported for five years from its release date; see [SECURITY.md](SECURITY.md) for the policy and how to report a vulnerability.
+Security fixes are not part of the subscription. See [Security support](#security-support) above and [SECURITY.md](SECURITY.md).
 
 **[Order / subscribe via omnicom.digital ->](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/)**
 
 ## Get in touch
 
-Using GLPI and curious about the MCP Server plugin, or want to talk ITSM tooling? Reach us at sales@omnicom.sk or via [omnicom.digital](https://omnicom.digital).
+Using GLPI and curious about the MCP Server plugin, or want to talk ITSM tooling? Reach us at sales@omnicom.digital or via [omnicom.digital](https://omnicom.digital).
 
 Security issues: security@omnicom.digital (see [SECURITY.md](SECURITY.md)).
