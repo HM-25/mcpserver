@@ -2,13 +2,13 @@
 
 This policy covers the GLPI plugin **MCP Server for GLPI** (`mcpserver`), published by OMNICOM s.r.o. ("OMNICOM") and licensed under GPL-3.0-or-later.
 
-Full releases are distributed to subscribers via the OMNICOM Support Portal. This repository (https://github.com/OMNICOM-Digital/mcpserver) publishes the public changelog, the release dates (GitHub Releases) and the security advisories. Security patches are published for everyone in https://github.com/OMNICOM-Digital/mcpserver-security.
+Full releases are distributed to subscribers via the OMNICOM Support Portal. This repository (https://github.com/OMNICOM-Digital/mcpserver) publishes the public changelog, security advisories and security releases.
 
 MCP Server Lite (`mcpserverlite`) has its own repository and its own security and release policy.
 
 ## Supported versions
 
-Every release of MCP Server for GLPI (GLPI 11.x) is supported with security fixes for **five years from its release date**. The release date of each version is published on the GitHub Releases page: https://github.com/OMNICOM-Digital/mcpserver/releases. The resulting support end date of every release is listed in the [supported versions table](https://github.com/OMNICOM-Digital/mcpserver-security#supported-versions).
+Every release of MCP Server for GLPI (GLPI 11.x) is supported with security fixes for **five years from its release date**. The release date of each version is published on the GitHub Releases page: https://github.com/OMNICOM-Digital/mcpserver/releases
 
 A security patch release (`1.x.y`) does not restart the support period of the release it fixes.
 
@@ -56,13 +56,11 @@ We ask for **90** days from your report to prepare and release a fix before publ
 - A security patch is issued for the **current release** and for **every earlier release that is within its five-year support period and is the latest release delivered to at least one customer**, as recorded in the OMNICOM Support Portal. Releases that are no longer the latest delivered release for any customer are superseded; users of such releases should upgrade.
 - **Security fixes are free of charge and are not conditional on an active subscription.** A subscription covers new releases, support, SLA and related services; it is not required to receive a security fix for a version you already have.
 - Each fix is accompanied by an advisory describing the issue, affected versions, severity, and the action users should take.
-- Security patches, security releases and advisories remain available for at least **10 years** from their release or for the remainder of the support period, whichever is longer.
+- Security releases and advisories remain available for at least **10 years** from their release or for the remainder of the support period, whichever is longer.
 
 ### Where to get security releases
 
-- **Security patches** are published for everyone, regardless of subscription status, in https://github.com/OMNICOM-Digital/mcpserver-security: the fix as a patch file for every release that receives it, with checksums and instructions. They contain only the security fix, not the plugin.
-- **Advisories** are published in the Security Advisories of https://github.com/OMNICOM-Digital/mcpserver and are also sent to the contact addresses of registered users.
-- **Subscribers** also receive the full security release through the OMNICOM Support Portal.
+GitHub Releases and Security Advisories of https://github.com/OMNICOM-Digital/mcpserver. Security releases are published there for everyone, regardless of subscription status. A security release on GitHub contains the fix as a patch file and in its release notes, not the full plugin; subscribers also receive the full release through the OMNICOM Support Portal. Advisories are also sent to the contact addresses of registered users.
 
 ## Scope
 
@@ -88,4 +86,4 @@ We will not pursue legal action against researchers who act in good faith, avoid
 
 ---
 
-*Last updated: **29 October 2026**. Contact: **security@omnicom.digital***
+*Last updated: **28 October 2026**. Contact: **security@omnicom.digital***

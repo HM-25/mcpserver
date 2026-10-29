@@ -59,7 +59,18 @@ Later releases continued the hardening: since 1.6.0, ticket assignment checks th
 
 Since 1.8.0, every write is two-step. The first call only returns a preview; the write happens on a second call carrying a signed confirmation token that is valid for 10 minutes, for one user, one tool, and exactly the previewed data. Any change to the data invalidates the token. Admins can switch this off under Setup > MCP Server > Behavior for unattended agents that have nobody to ask.
 
-Every release is supported for five years from its own release date; the 1.x line currently runs until **2031-10-29**. Release dates are on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases); the support end date of every release is in the [supported versions table](https://github.com/OMNICOM-Digital/mcpserver-security#supported-versions). Security fixes are published as free patches for everyone in [mcpserver-security](https://github.com/OMNICOM-Digital/mcpserver-security), with an advisory in this repository's [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). To report a vulnerability, see [SECURITY.md](SECURITY.md); please do not open public issues for security problems.
+Every release is supported for five years from its own release date, as shown on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases); the 1.x line currently runs until **2031-10-29**. Security fixes are published as free security releases on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases) for everyone, with an advisory in this repository's [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). To report a vulnerability, see [SECURITY.md](SECURITY.md); please do not open public issues for security problems.
+
+### Applying a security patch
+
+A security release on GitHub contains the fix as a patch file (and in its release notes), not the full plugin. Use the patch that matches the version shown in GLPI under Setup > Plugins:
+
+1. Back up the plugin folder: `cp -a plugins/mcpserver plugins/mcpserver.bak`
+2. Check the download: `sha256sum -c SHA256SUMS --ignore-missing`
+3. From inside `plugins/mcpserver`: `patch -p1 --dry-run < mcpserver-<version>.patch`, then the same without `--dry-run`
+4. Clear the GLPI cache (`php bin/console cache:clear` in the GLPI root) and reconnect your AI clients
+
+If a patch does not apply, e-mail security@omnicom.digital with your plugin version. Subscribers also receive the full security release through the OMNICOM Support Portal.
 
 ## Compatibility
 
@@ -82,7 +93,7 @@ Source is open (GPL v3.0 - see [LICENSE](LICENSE)). A subscription covers new re
 - Optional one-time installation assistance: €100 (excl. VAT)
 - Without a renewed subscription, the last downloaded version keeps working; new feature releases, support and Support Portal access pause until renewal, but security patches stay free on GitHub
 
-Security fixes are not part of the subscription. They are published as free patches for everyone in [OMNICOM-Digital/mcpserver-security](https://github.com/OMNICOM-Digital/mcpserver-security), with the support date of every release. Each release is supported for five years from its release date; see [SECURITY.md](SECURITY.md) for the policy and how to report a vulnerability.
+Security fixes are not part of the subscription. They are published as free security releases for everyone on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases). Each release is supported for five years from its release date; see [SECURITY.md](SECURITY.md) for the policy and how to report a vulnerability.
 
 **[Order / subscribe via omnicom.digital ->](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/)**
 
