@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png" width="120" alt="Omnicom, s.r.o." />
+  <img src="https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png" width="120" alt="OMNICOM s.r.o." />
 </p>
 
 <h1 align="center">GLPI MCP Server Plugin</h1>
@@ -14,7 +14,7 @@
 
 A GLPI plugin that exposes GLPI as an [MCP](https://modelcontextprotocol.io) (Model Context Protocol) server, so AI assistants work with tickets, the knowledge base, projects, users, groups, and the service catalog conversationally, instead of manual navigation or one-off custom integrations per client.
 
-Built and maintained by [Omnicom, s.r.o.](https://omnicom.digital), an ITSM/ESM consultancy.
+Built and maintained by [OMNICOM s.r.o.](https://omnicom.digital), an ITSM/ESM consultancy.
 
 **[-> Full product page, pricing, and how to get it](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/)**
 
@@ -59,7 +59,7 @@ Later releases continued the hardening: since 1.6.0, ticket assignment checks th
 
 Since 1.8.0, every write is two-step. The first call only returns a preview; the write happens on a second call carrying a signed confirmation token that is valid for 10 minutes, for one user, one tool, and exactly the previewed data. Any change to the data invalidates the token. Admins can switch this off under Setup > MCP Server > Behavior for unattended agents that have nobody to ask.
 
-Every release is supported for five years from its own release date; the 1.x line currently runs until **2031-10-07** (dates per release: [supported versions](https://github.com/OMNICOM-Digital/mcpserver-security#supported-versions)). Security fixes are published as free patches for everyone in [mcpserver-security](https://github.com/OMNICOM-Digital/mcpserver-security), with an advisory in this repository's [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). To report a vulnerability, see [SECURITY.md](SECURITY.md); please do not open public issues for security problems.
+Every release is supported for five years from its own release date; the 1.x line currently runs until **2031-10-29**. Release dates are on [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver/releases); the support end date of every release is in the [supported versions table](https://github.com/OMNICOM-Digital/mcpserver-security#supported-versions). Security fixes are published as free patches for everyone in [mcpserver-security](https://github.com/OMNICOM-Digital/mcpserver-security), with an advisory in this repository's [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver/security/advisories). To report a vulnerability, see [SECURITY.md](SECURITY.md); please do not open public issues for security problems.
 
 ## Compatibility
 
@@ -76,7 +76,7 @@ Upgrading from an earlier version: run the plugin update in Setup > Plugins, cle
 
 ## Licensing
 
-Source is open (GPL v3.0 - see [LICENSE](LICENSE)). A subscription covers new releases, support with SLA, and access to the Omnicom GLPI Support Portal:
+Source is open (GPL v3.0 - see [LICENSE](LICENSE)). A subscription covers new releases, support with SLA, and access to the OMNICOM Support Portal:
 
 - €400/year (excl. VAT)
 - Optional one-time installation assistance: €100 (excl. VAT)
