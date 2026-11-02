@@ -1,12 +1,15 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png" alt="OMNICOM s.r.o." width="120">
+  <img src="https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png" alt="OMNICOM s.r.o." width="120" />
 </p>
 
-# GLPI MCP Server Plugin
+<h1 align="center">GLPI MCP Server Plugin</h1>
 
-[![Get it at omnicom.digital](https://img.shields.io/badge/Get%20it-omnicom.digital-c2304e)](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/)
-[![GPLv3 license](https://img.shields.io/badge/license-GPLv3-13A688)](LICENSE)
-[![GLPI 11.0-11.9](https://img.shields.io/badge/GLPI-11.0--11.9-13A688)](https://plugins.glpi-project.org/#/plugin/mcpserver)
+<p align="center">
+  <a href="https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/"><img src="https://img.shields.io/badge/Get%20it-omnicom.digital-c2304e" alt="Get it at omnicom.digital" /></a>
+  <a href="https://github.com/OMNICOM-Digital/mcpserver/releases/latest"><img src="https://img.shields.io/badge/release-1.8.0-13A688" alt="Release 1.8.0" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPLv3-13A688" alt="GPLv3 license" /></a>
+  <a href="https://plugins.glpi-project.org/#/plugin/mcpserver"><img src="https://img.shields.io/badge/GLPI-11.0--11.9-13A688" alt="GLPI 11.0-11.9" /></a>
+</p>
 
 **The first official MCP Server plugin for GLPI.**
 
@@ -15,6 +18,8 @@ A GLPI plugin that exposes GLPI as an [MCP](https://modelcontextprotocol.io) (Mo
 Built and maintained by [OMNICOM s.r.o.](https://omnicom.digital), an ITSM/ESM consultancy.
 
 **[-> Full product page, pricing, and how to get it](https://www.omnicom.digital/en/our-services/methodologies-and-tools/glpi/plugins-for-glpi/)**
+
+Need only read access? [MCP Server Lite](https://github.com/OMNICOM-Digital/mcpserver-lite) is the free, read-only edition (33 read tools, no write tools), published on GitHub for everyone.
 
 ## Features
 
